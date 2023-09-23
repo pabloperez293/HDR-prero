@@ -1,57 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Estilos css0 -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
     <!-- iconos  remix-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
 
     <!-- icono de barra -->
-    <link rel="shortcu icon" href="img/logoHDR.jpg" type="image/x-icon">
+    <link rel="shortcu icon" href="img/logoHDR.jpg" type="image/x-icon" />
 
     <title>hdrp prepro</title>
-</head>
-<body>
-<!-- Tabla de navegador -->
+  </head>
+  <body>
+    <!-- Tabla de navegador -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <!-- <img src="img/logoHDR.jpg" alt="Logo hdr" -->
+          Logo</a
+        >
 
-            <a href="#" class="navbar-brand"> <img src="img/logoHDR.jpg" alt="Logo hdr"></a>
+        <a href="#" class="navbar-brand"
+          ><span class="text-warning">Manantial de </span> Bendiciones</a
+        >
+        <!-- Boton de menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar5"
+          aria-controls="navbar5"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a href="#" class="navbar-brand"><span class="text-warning">Manantial de </span> Bendiciones</a>
+        <div class="collapse navbar-collapse" id="navbar5">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Inicio</a>
+            </li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="navbar5" aria-controls="navbar5" aria-expanded="false" aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"> </span>
-            </button>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Radio</a>
+            </li>
 
-            <div class="collapse navbar-collapse" id="navbar5">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="" class="nav-lin">Inicio</a>
-                    </li>
-                </ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Iglesias</a>
+            </li>
 
-            </div>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <div class="contenedor head">
+      <h1>Somos familia</h1>
+      <p class="copy">Bienvenido</p>
+    </div>
+
+    <!-- Galeria carrousel -->
+
+    <div id="caruselE" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#caruselE"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"></button>
+
+        <button
+          type="button"
+          data-bs-target="#caruselE"
+          data-bs-slide-to="1"
+          aria-current="true"
+          aria-label="Slide 2"></button>
+
+        <button
+          type="button"
+          data-bs-target="#caruselE"
+          data-bs-slide-to="2"
+          aria-current="true"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Primer imagen carrousel -->
+        <div class="carousel-item active">
+          <img
+            src="img/n1.jpg"
+            class="d-block w-100 bg-secondary"
+            alt="portada 1" />
+          <div class="carousel-caption">
+            <h4>Lo mejor de nosotros</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure hic
+              necessitatibus beatae optio nam voluptatem error! Neque dolorum
+              iste nesciunt nemo officiis. Quis consequuntur in nesciunt
+              assumenda dolores! Obcaecati, eaque.
+            </p>
+          </div>
         </div>
 
-    </nav>
-    
+        <!-- Segunda imagen carrousel -->
+        <div class="carousel-item">
+          <img src="img/n2.jpg" class="d-block w-100" alt="portada 2" />
+          <div class="carousel-caption">
+            <h4>Lo mejor de nosotros</h4>
+            <!-- <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure hic
+                necessitatibus beatae optio nam voluptatem error! Neque dolorum
+                iste nesciunt nemo officiis. Quis consequuntur in nesciunt
+                assumenda dolores! Obcaecati, eaque.
+              </p> -->
+          </div>
+        </div>
 
+        <!-- tercer imagen carrousel -->
+        <div class="carousel-item">
+          <img src="img/n3.jpg" class="d-block w-100" alt="portada 3" />
+          <div class="carousel-caption">
+            <h4>Lo mejor de nosotros</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure hic
+              necessitatibus beatae optio nam voluptatem error! Neque dolorum
+              iste nesciunt nemo officiis. Quis consequuntur in nesciunt
+              assumenda dolores! Obcaecati, eaque.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <!-- Tarjeta de pastores -->
+
+    <main>
+      <h2 class="subtitulo text-center p-md-3">Nuestros pastores</h2>
+      
+      <div id="carouselExampleControls" class="carousel slide bg-light py-3 container" data-bs-ride="carousel">
+      
+        <div class=" row carousel-inner">
+          <!--  -->
+          <div class="tarjeta col">
+            <div class="face front carousel-item active">
+              <img src="img/santi.png" alt="" />
+              <h3 class="text-center">Pastor</h3>
+            </div>
+
+            <div class="face back">
+                <h3 class="text-center">Pastor de jovenes</h3>
+
+                <p class="text-center">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consectetur quasi nobis corrupti porro adipisci expedita
+                  voluptate, quas deleniti deserunt non?
+                </p>
+            </div>
+          </div>
+
+          <div class="tarjeta col">
+            <div class="face front carousel-item ">
+              <img src="img/meli.png" alt="" />
+              <h3 class="text-center">Pastora</h3>
+            </div>
+
+            <div class="face back">
+              <h3 class="text-center">Pastora de jovenes</h3>
+              <p class="text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur quasi nobis corrupti porro adipisci expedita
+                voluptate, quas deleniti deserunt non?
+              </p>
+             
+            </div>
+          </div>
+
+          <div class="tarjeta col">
+            <div class="face front carousel-item ">
+              <img src="img/mark.png" alt="" />
+              <h3 class="text-center">Pastor</h3>
+            </div>
+
+            <div class="face back">
+              <h3 class="text-center">Pastor</h3>
+              <p class="text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur quasi nobis corrupti porro adipisci expedita
+                voluptate, quas deleniti deserunt non?
+              </p>             
+            </div>
+          </div>
+
+          <div class="tarjeta col">
+            <div class="face front carousel-item ">
+              <img src="img/mark.png" alt="" />
+              <h3 class="text-center">Pastor</h3>
+            </div>
+
+            <div class="face back">
+              <h3 class="text-center">Pastor</h3>
+              <p class="text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consectetur quasi nobis corrupti porro adipisci expedita
+                voluptate, quas deleniti deserunt non?
+              </p>             
+            </div>
+          </div>
+
+        </div> 
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+   
+   
+    </main>
 
 
     <!-- script de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
 
     <!-- codigo javascript  -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

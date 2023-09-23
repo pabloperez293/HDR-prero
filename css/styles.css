@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+
+  /* color general */
+  --first-color: white;
+  --second-color: black;
+  /* colores iconos */
+  --color-face: #3b5998;
+  --color-youtube: #e93131;
+  --color-instagram: #bc2a8d;
+  --color-twitter: #00aced;
+
+
+}
+
+
+/* iconoos del back face */
+.lista .cambio{
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid var(--first-color);
+  float: left;
+  transition: all 0.5s ease;
+  list-style: none;
+}
+/* subrallado de iconos */
+a{
+  text-decoration: none!important;
+}
+/* ------------- */
+.lista{
+  padding: 1px;
+  margin: 1px;
+}
+.cambio{
+  display: grid;
+  place-content: center;
+  color: var(--color-face);
+  margin-top: 2px;
+  transition: all 0.5s ease;
+}
+
+.lista .cambio:hover.facebook{
+  border: 6px solid var(--color-face);
+  box-shadow: 0 0 15px var(--color-face);
+  transition: all 0.5s ease;
+}
+
+.lista .cambio:hover .ri-facebook-fill{
+  color: var(--color-face);
+  text-shadow: 0 0 15px var(--color-face);
+  transition: all 0.5s ease;
+}
+
+.lista .cambio:hover.twitter{
+  border: 6px solid var(--color-twitter);
+  box-shadow: 0 0 15px var(--color-twitter);
+  transition: all 0.5s ease;
+}
+.lista .cambio:hover .ri-twitter-x-line{
+  color: var(--color-twitter);
+  text-shadow: 0 0 15px var(--color-twitter);
+  transition: all 0.5s ease;
+}
+.lista .cambio:hover.instagram{
+  border: 6px solid var(--color-instagram);
+  box-shadow: 0 0 15px var(--color-instagram);
+  transition: all 0.5s ease;
+}
+.lista .cambio:hover .ri-instagram-line{
+  color: var(--color-instagram);
+  text-shadow: 0 0 15px var(--color-instagram);
+  transition: all 0.5s ease;
+}
+.lista .cambio:hover.youtube{
+  border: 6px solid var(--color-youtube);
+  box-shadow: 0 0 15px var(--color-youtube);
+  transition: all 0.5s ease;
+}
+.lista .cambio:hover .ri-youtube-fill{
+  color: var(--color-youtube);
+  text-shadow: 0 0 15px var(--color-youtube);
+  transition: all 0.5s ease;
+}
+/* ---------------------- */
+
+/* tarjeta de pastores */
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.tarjeta{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+.tarjeta .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+.tarjeta .front{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px var(--second-color)
+}
+.tarjeta .front img{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tarjeta .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: var(--first-color);
+  background: rgba(0, 0, 0, .4);
+}
+.tarjeta .back{
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 5px;
+  color: var(--first-color);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bor
+}
+
+.tarjeta .back h3{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  color: var(--first-color);
+}
+.tarjeta .back p{
+  letter-spacing: 1px;
+}
+
+.tarjeta:hover .front{
+  transform: perspective(600px) rotateY(180deg); 
+}
+.tarjeta:hover .back{
+  transform: perspective(600px) rotateY(360deg); 
+}
